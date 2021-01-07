@@ -1,10 +1,11 @@
 /// <reference types=" Cypress" />
-it('google test', function (){
-    /*cy.visit')*/
-    cy.get('.gLFyf').type('Automation Step by Step{enter}')
-    cy.get('.dmenKe > .cIkxbf > .usJj9c > h3 > .l').click()
 
-
+it.only('google test', function (){
+    cy.visit('https://www.google.com/')
+    cy.xpath('//input[@title=\'Search\']').type('Automation Step by Step{enter}')
+   /* cy.xpath('//h3[normalize-space()=\'Automation Step by ' +
+        'Step: NevLearninger Stop Learning ...\']').click()*/
+    //cy.xpath('//input[@id=\'gbqfbb\']').click()
 })
 
 

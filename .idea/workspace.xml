@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="461382b3-8148-4f28-a9fb-c9b1da171876" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@cypress/listr-verbose-renderer/node_modules/ansi-regex/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@cypress/listr-verbose-renderer/node_modules/ansi-regex/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@cypress/listr-verbose-renderer/node_modules/ansi-regex/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@cypress/listr-verbose-renderer/node_modules/ansi-regex/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@cypress/listr-verbose-renderer/node_modules/strip-ansi/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@cypress/listr-verbose-renderer/node_modules/strip-ansi/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@cypress/listr-verbose-renderer/node_modules/strip-ansi/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@cypress/listr-verbose-renderer/node_modules/strip-ansi/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-regex/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-regex/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ansi-regex/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-regex/license" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ansi-regex/license" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ansi-regex/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-regex/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ansi-regex/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/detect.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/detect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/detectLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/detectLimit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/detectSeries.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/detectSeries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/dist/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/dist/async.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/dist/async.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/dist/async.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/dist/async.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/dist/async.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/find.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/find.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/findLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/findLimit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/findSeries.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/findSeries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/queue.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/queue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/priorityQueue.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/priorityQueue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/race.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/race.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/waterfall.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/waterfall.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cli-truncate/node_modules/ansi-regex/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cli-truncate/node_modules/ansi-regex/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cli-truncate/node_modules/ansi-regex/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cli-truncate/node_modules/ansi-regex/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cli-truncate/node_modules/strip-ansi/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cli-truncate/node_modules/strip-ansi/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cli-truncate/node_modules/strip-ansi/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cli-truncate/node_modules/strip-ansi/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-util-is/float.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-util-is/lib/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-util-is/lib/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-util-is/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-util-is/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-util-is/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress-xpath/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress-xpath/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress-xpath/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress-xpath/src/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress-xpath/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cypress/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eventemitter2/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eventemitter2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eventemitter2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eventemitter2/eventemitter2.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eventemitter2/eventemitter2.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eventemitter2/lib/eventemitter2.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eventemitter2/lib/eventemitter2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eventemitter2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eventemitter2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/glob/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/glob/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/glob/glob.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/glob/glob.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/glob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/glob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/glob/sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/glob/sync.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/has-ansi/node_modules/ansi-regex/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/has-ansi/node_modules/ansi-regex/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/has-ansi/node_modules/ansi-regex/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/has-ansi/node_modules/ansi-regex/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/listr-update-renderer/node_modules/ansi-regex/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/listr-update-renderer/node_modules/ansi-regex/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/listr-update-renderer/node_modules/ansi-regex/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/listr-update-renderer/node_modules/ansi-regex/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/listr-update-renderer/node_modules/strip-ansi/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/listr-update-renderer/node_modules/strip-ansi/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/listr-update-renderer/node_modules/strip-ansi/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/listr-update-renderer/node_modules/strip-ansi/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/psl/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/psl/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/psl/data/rules.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/psl/data/rules.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/psl/dist/psl.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/psl/dist/psl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/psl/dist/psl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/psl/dist/psl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/psl/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/psl/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/strip-ansi/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/strip-ansi/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/strip-ansi/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/strip-ansi/license" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/strip-ansi/license" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/strip-ansi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/strip-ansi/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/strip-ansi/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/strip-ansi/readme.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2CjZclSB0Pz9fsYX1Ge3Udy6nBX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/user/QA_Automation/cypress_brief&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="461382b3-8148-4f28-a9fb-c9b1da171876" name="Changes" comment="" />
+      <created>1659318035443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659318035443</updated>
+      <workItem from="1659318036785" duration="1119000" />
+      <workItem from="1659319159195" duration="5613000" />
+      <workItem from="1659927638415" duration="6625000" />
+      <workItem from="1660162380711" duration="626000" />
+      <workItem from="1661053214790" duration="398000" />
+      <workItem from="1661652404171" duration="2691000" />
+      <workItem from="1661732615558" duration="92000" />
+      <workItem from="1661735716988" duration="474000" />
+      <workItem from="1661793140415" duration="646000" />
+      <workItem from="1661895759143" duration="670000" />
+      <workItem from="1661901879979" duration="7000" />
+      <workItem from="1662914385056" duration="1532000" />
+      <workItem from="1662918480193" duration="4622000" />
+      <workItem from="1662926227614" duration="319000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

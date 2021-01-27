@@ -17,7 +17,20 @@ describe("Chat page ", () => {
         cy.get('[class="user-role-list-item-cmp__name"]')
             .first()
             .should("be.visible");
+        // related searched contact list should appear in autocomplete list
+        cy.get('[class="user-role-list-item-cmp__name"]')
+            .contains("tester",{matchCase:false})
+            .first()
+            .click();
 
+        // type message text field should be visible
+        cy.get(".public-DraftStyleDefault-block",{timeout:6000}).should("be.visible");
+
+        // send button should be enabled when type any text on "type a message" field
+        cy.get(".public-DraftStyleDefault-block").type("Hi");
+        cy.get(".chat-input-send-icon-cmp > svg > circle")
+            .should("be.visible")
+            .click({ force: true });
 
     });
 });

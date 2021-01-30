@@ -32,5 +32,20 @@ describe("Chat page ", () => {
             .should("be.visible")
             .click({ force: true });
 
+        // message should sent with status on personal chat
+        cy.get(".event-text").should("be.visible");
+        cy.get(".event__status > .event-status > .icon-cmp > svg").should(
+            "be.visible"
+        );
+
+        // emoji selection should be visible on personal chat
+        cy.get(".emoji-selector-button-cmp > .icon-cmp > svg")
+            .should("be.visible")
+            .click();
+        cy.get('[class="emoji-mart-emoji emoji-mart-emoji-native"]')
+            .first()
+            .click();
+
+
     });
 });

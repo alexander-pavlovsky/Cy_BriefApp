@@ -46,6 +46,34 @@ describe("Chat page ", () => {
             .first()
             .click();
 
+// send emoji on personal chat
+        cy.get(".chat-input-send-icon-cmp > svg > circle").click({ force: true });
+
+        // sent emoji should be visible on personal chat
+        cy.get(".event-text__some-emoji").should("be.visible");
+
+        // send image to personal chat
+        cy.get("input[type=file]").attachFile("./testing-image.png").wait(500);
+
+        // verify image upload percentage
+        cy.get(".resource-item-type-a__size-percent").contains("100%");
+        cy.get(".chat-input-send-icon-cmp > svg > circle").click({ force: true });
+
+        // sent image should be visible on personal chat
+        cy.get(".event-file-or-image-cmp").should("be.visible");
+
+        // send file to personal chat
+        cy.get("input[type=file]").attachFile("./testing-pdf.pdf").wait(500);
+
+
+
+
+
+
+
+
+
+
 
     });
 });

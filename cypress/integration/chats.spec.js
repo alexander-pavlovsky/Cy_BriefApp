@@ -65,7 +65,34 @@ describe("Chat page ", () => {
         // send file to personal chat
         cy.get("input[type=file]").attachFile("./testing-pdf.pdf").wait(500);
 
+// verify file upload percentage
+        cy.get(".resource-item-type-a__size-percent").contains("100%");
+        cy.get(".chat-input-send-icon-cmp > svg > circle").click({ force: true });
 
+        // sent file should be visible on personal chat
+        cy.get('[class="file-data"]').contains('testing-pdf.pdf');
+
+        // create new group chat
+        cy.get(".create-btn-cmp__label").should("be.visible").click();
+        cy.get('[class="list-item-button-cmp__text"]').first().click();
+
+        // group chat name field should be visible
+        cy.get(".input-box__input").type("brief group");
+
+        // create button should be enabled once user type any text on group chat name
+        cy.get(".user-search__input").type("tester");
+        cy.get(".brief-btn-cmp__text").should("be.visible");
+
+        // auto complete contact list should be visible
+        cy.get('[class="user-role-list-item-cmp__name"]')
+            .first()
+            .should("be.visible");
+
+        // related searched contact list should appear in autocomplete list
+        cy.get('[class="user-role-list-item-cmp__name"]')
+            .contains("tester",{matchCase:false})
+            .first()
+            .click();
 
 
 

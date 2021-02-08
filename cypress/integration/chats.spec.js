@@ -94,6 +94,25 @@ describe("Chat page ", () => {
             .first()
             .click();
 
+        cy.get(".brief-btn-cmp__text").contains("Create").click();
+
+        // group should be created along with sent status
+        cy.get(".system-event > :nth-child(1)").should("be.visible");
+
+        // emoji selection should be visible
+        cy.get(".emoji-selector-button-cmp > .icon-cmp > svg")
+            .should("be.visible")
+            .click();
+        cy.get('[class="emoji-mart-emoji emoji-mart-emoji-native"]')
+            .first()
+            .click();
+
+        // send emoji on group chat
+        cy.get(".chat-input-send-icon-cmp > svg > circle").click({ force: true });
+
+        // sent emoji should be visible on group chat
+        cy.get(".event-text__some-emoji").should("be.visible");
+
 
 
 

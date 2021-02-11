@@ -126,6 +126,32 @@ describe("Chat page ", () => {
         // send file to group chat
         cy.get("input[type=file]").attachFile("./testing-pdf.pdf").wait(300);
 
+// verify file upload percentage
+        cy.get(".resource-item-type-a__size-percent").contains("100%");
+        cy.get(".chat-input-send-icon-cmp > svg > circle").click({ force: true });
+
+        // sent file should be visible on group chat
+        cy.get('[class="file-data"]').contains('testing-pdf.pdf');
+
+        // create new broadcast chat
+        cy.get(".create-btn-cmp__label").should("be.visible").click();
+        cy.get('[class="list-item-button-cmp__text"]').last().click();
+
+        // broadcast chat name field should be visible
+        cy.get(".user-search__input").should("be.visible").type("chat");
+
+        // next button should be enabled once user type any text on group chat name
+        cy.get(".brief-btn-cmp__text").should("be.visible");
+
+        // related searched contact list should appear in autocomplete list
+        cy.get('[class="user-role-list-item-cmp__name"]')
+            .contains("chat",{matchCase:false})
+            .first()
+            .click();
+        cy.get(".brief-btn-cmp__text").contains("Next").click();
+
+        // type message text field should be visible
+        cy.get(".public-DraftStyleDefault-block").should("be.visible");
 
 
 

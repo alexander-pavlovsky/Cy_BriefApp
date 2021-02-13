@@ -152,6 +152,32 @@ describe("Chat page ", () => {
 
         // type message text field should be visible
         cy.get(".public-DraftStyleDefault-block").should("be.visible");
+// send button should be enabled when type any text on "type a message" field
+        cy.get(".public-DraftStyleDefault-block").type("broadcast message");
+        cy.get("circle").should("be.visible");
+
+        // send text message on broadcast
+        cy.get("circle").click({ force: true }).wait(800);
+
+        // broadcast message should sent with status
+        cy.get(":nth-child(1) > .chat-list-item-cmp > .content-right")
+            .wait(500);
+        cy.get(":nth-child(1) > .chat-list-item-cmp > .content-right").click();
+
+        // emoji selection should be visible
+        cy.get(".emoji-selector-button-cmp > .icon-cmp > svg")
+            .should("be.visible")
+            .click();
+        cy.get('[class="emoji-mart-emoji emoji-mart-emoji-native"]')
+            .first()
+            .click();
+
+        // send emoji in broadcast chat
+        cy.get(".chat-input-send-icon-cmp > svg > circle").click({ force: true });
+
+        // sent emoji should be visible in chat window
+        cy.get(":nth-child(1) > .chat-list-item-cmp > .content-right").click();
+        cy.get('[class="event-text__some-emoji"]').should("be.visible");
 
 
 

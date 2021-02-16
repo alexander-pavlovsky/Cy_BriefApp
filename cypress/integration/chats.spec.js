@@ -179,7 +179,20 @@ describe("Chat page ", () => {
         cy.get(":nth-child(1) > .chat-list-item-cmp > .content-right").click();
         cy.get('[class="event-text__some-emoji"]').should("be.visible");
 
+// send image to broadcast chat
+        cy.get("input[type=file]").attachFile("./testing-image.png").wait(500);
 
+        // verify image upload percentage
+        cy.get(".resource-item-type-a__size-percent").contains("100%");
+        cy.get(".chat-input-send-icon-cmp > svg > circle").click({ force: true }).wait(500);
+
+        // sent image should be visible on broadcast chat
+        cy.get(".event-file-or-image-cmp").should("be.visible");
+    });
+
+    // Brief supports only one active tab within one browser session.
+    it("verify multi tab pop up ", function () {
+        cy.contains('Reload').should('be.visible').click();
 
 
 

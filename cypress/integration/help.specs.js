@@ -25,6 +25,18 @@ describe("Contact", () => {
         cy.get(".maat-long-button_warning").click();
         cy.get(".event-text").should("not.exist");
 
+        // Verify that emoji in the Feedback & Support chat are working
+        // emoji selection should be visible on Feedback & Support chat
+        cy.get(".emoji-selector-button-cmp > .icon-cmp > svg")
+            .should("be.visible")
+            .click();
+        cy.get('[class="emoji-mart-emoji emoji-mart-emoji-native"]')
+            .first()
+            .click();
+
+
+
+
 
 
     });

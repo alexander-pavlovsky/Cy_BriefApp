@@ -34,9 +34,11 @@ describe("Contact", () => {
             .first()
             .click();
 
+        // send emoji on Feedback & Support chat
+        cy.get(".chat-input-send-icon-cmp > svg > circle").click({ force: true });
 
-
-
+        // sent emoji should be visible on Feedback & Support chat
+        cy.get(".event-text__some-emoji").should("be.visible");
 
 
     });

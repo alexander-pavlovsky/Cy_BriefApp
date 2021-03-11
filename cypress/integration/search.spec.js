@@ -17,7 +17,14 @@ describe("Search page ", () => {
         cy.get('[placeholder="Search …"]').clear().type("test").wait(500);
         cy.get('[qa-mark="contacts_list_item_title"]').contains("test").click();
 
+        // When pressing Enter button should not see the page refreshing
+        cy.window().then((win) => (win.shouldNotReload = true));
+        cy.get('[title="Search"]').type("{enter}");
+        cy.window().should("have.prop", "shouldNotReload");
 
+        // When entering random alphanumeric characters no search result should appear
+        cy.get('[placeholder="Search …"]').clear().type("test!@#$%");
+        cy.get('[class="empty-screen__actions"]').should("be.visible");
 
 
     });

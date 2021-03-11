@@ -42,7 +42,9 @@ describe("Search page ", () => {
         cy.get('.top-bar-search-cmp__icon > .icon-cmp').click();
         cy.get('[placeholder="Search …"]').should('have.value', '');
 
-
+        // Verify that when no search data entered the delete cross icon is not visible and search icon is
+        cy.get('[placeholder="Search …"]').clear();
+        cy.get('.top-bar-search-cmp__icon > .icon-cmp').should('be.visible');
 
 
 

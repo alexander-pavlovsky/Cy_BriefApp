@@ -34,7 +34,13 @@ describe("Search page ", () => {
         cy.get('[placeholder="Search …"]').clear().type("tESt");
         cy.get('[class="content-right"]').contains("test");
 
+        // Verify that the search functionality works with other languages
+        cy.get('[placeholder="Search …"]').clear().type("prueba",{delay:300});
+        cy.get('.user-list-item-cmp').contains("prueba", { matchCase: false });
 
+        // Verify that user can delete search data by clicking on the delete cross icon in the search box
+        cy.get('.top-bar-search-cmp__icon > .icon-cmp').click();
+        cy.get('[placeholder="Search …"]').should('have.value', '');
 
 
 

@@ -26,6 +26,19 @@ describe("Search page ", () => {
         cy.get('[placeholder="Search …"]').clear().type("test!@#$%");
         cy.get('[class="empty-screen__actions"]').should("be.visible");
 
+        // Verify that user is able to see chats by entering chat name
+        cy.get('[placeholder="Search …"]').clear().type("test");
+        cy.get('[class="content-right"]').contains("test",{matchCase:false});
+
+        // Verify that user is able to see search results when entering data in lower and upper cases
+        cy.get('[placeholder="Search …"]').clear().type("tESt");
+        cy.get('[class="content-right"]').contains("test");
+
+
+
+
+
+
 
     });
 });

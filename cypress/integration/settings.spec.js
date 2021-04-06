@@ -33,7 +33,17 @@ describe("Settings page ", () => {
         // Verify that self chat is present
         cy.get('[class="new-settings-line__text"]').contains("Self Chat");
 
+        // Verify self chat functionality
+        cy.get('[class="new-settings-line__text"]').contains("Self Chat").click();
+        cy.get(".public-DraftStyleDefault-block").type("Hi");
+        cy.get(".chat-input-send-icon-cmp > svg > circle").click({ force: true });
+        cy.get(".event-text__text").contains("hi");
 
+        // Verify that Notification is present on the Settings page
+        cy.get('[title="Settings"]').click();
+        cy.get('[class="new-settings-line__text"]')
+            .contains("Notifications")
+            .should("be.visible");
 
 
 

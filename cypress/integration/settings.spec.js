@@ -45,6 +45,11 @@ describe("Settings page ", () => {
             .contains("Notifications")
             .should("be.visible");
 
+        // Verify that Sounds toggle is present
+        cy.get('[class="new-settings-line__text"]')
+            .contains("Sounds")
+            .should("be.visible");
+
 
 
     });

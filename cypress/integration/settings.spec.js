@@ -50,6 +50,11 @@ describe("Settings page ", () => {
             .contains("Sounds")
             .should("be.visible");
 
+        // Verify that Message Send Key is present
+        cy.get('[class="settings-cmp scrollable"]',{ensureScrollable:false}).scrollTo('bottom');
+        cy.get('[class="new-settings-line__text"]')
+            .contains("Message Send Key")
+            .should("be.visible");
 
 
     });

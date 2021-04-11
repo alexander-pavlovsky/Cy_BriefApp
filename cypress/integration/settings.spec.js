@@ -56,6 +56,5 @@ describe("Settings page ", () => {
             .contains("Message Send Key")
             .should("be.visible");
 
-
     });
 });

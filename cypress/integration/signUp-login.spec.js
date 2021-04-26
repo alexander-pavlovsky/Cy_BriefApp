@@ -46,8 +46,17 @@ describe("Sign up - login page ", () => {
                 cy.visit(href);
             });
 
+        cy.contains("Welcome to Brief").should("be.visible");
 
-
-
+        cy.get(".primary-button").contains("Sign in");
     });
+
+    // user should be redirected to create account page with the header 'Let's get you on Brief'
+    it("create account button verification ", () => {
+        cy.get(".secondary-button").click({ force: true });
+
+        cy.contains("Let’s get you on Brief").should("be.visible");
+    });
+
+
 });

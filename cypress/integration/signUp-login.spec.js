@@ -58,5 +58,29 @@ describe("Sign up - login page ", () => {
         cy.contains("Let’s get you on Brief").should("be.visible");
     });
 
+// login button should have href link
+    it("try for free button should have link", () => {
+        cy.visit("https://www.gobrief.com/");
 
-});
+        cy.get(".button-5").should("have.attr", "href");
+    });
+
+    // user should be redirected to login page and
+    // Sign In button should be visible along with the header: 'Welcome to Brief'
+    it("try for free button verification", () => {
+        cy.get(".button-5")
+            .invoke("attr", "href")
+            .then((href) => {
+                cy.visit(href);
+            });
+        cy.contains("Welcome to Brief").should("be.visible");
+    });
+
+    // Next button should be disabled
+    it("verify that user can enter valid email only ", () => {
+        cy.visit("https://webx.gobrief.com/#/login");
+
+        cy.get(".secondary-button").click({ force: true });
+
+
+    });

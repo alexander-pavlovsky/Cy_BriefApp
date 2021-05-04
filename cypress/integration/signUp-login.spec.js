@@ -105,6 +105,14 @@ describe("Sign up - login page ", () => {
 
         cy.get(".text-input__input").should("have.value", "gobrief001@gmail.com");
 
+        // Next button should be enabled on valid phone input
+
+        cy.get('[class="auth-option-tab-cmp"]').click();
+
+        cy.get(".phone-input-cmp__main-phone-box").type("123");
+
+        cy.get(".primary-button").should("not.be.enabled");
+
 
 
 

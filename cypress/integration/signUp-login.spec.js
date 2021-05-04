@@ -97,6 +97,17 @@ describe("Sign up - login page ", () => {
 
         cy.get(".secondary-button").click({ force: true });
 
+        cy.get(".text-input__input").clear().type("gobrief001@gmail.com");
+
+        cy.get(".primary-button").should("be.visible").click().wait(500);
+
+        cy.get(".text-input__action").click();
+
+        cy.get(".text-input__input").should("have.value", "gobrief001@gmail.com");
+
+
+
+
 
     });
 });

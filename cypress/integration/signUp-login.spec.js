@@ -105,6 +105,7 @@ describe("Sign up - login page ", () => {
 
         cy.get(".text-input__input").should("have.value", "gobrief001@gmail.com");
 
+
         // Next button should be enabled on valid phone input
 
         cy.get('[class="auth-option-tab-cmp"]').click();
@@ -113,9 +114,36 @@ describe("Sign up - login page ", () => {
 
         cy.get(".primary-button").should("not.be.enabled");
 
+    });
 
+    // User should receive pin code email
+    it("verify that user should get pin code in email inbox ", function () {
+        cy.visit("https://webx.gobrief.com/");
 
+        cy.get(".primary-button").click().wait(500);
 
+        cy.get(".text-input").type("gobrief001@gmail.com");
 
+        cy.get(".primary-button").click().wait(6000);
+
+        cy.task("gmail:get-messages", {
+            options: {
+                from: "support@gobrief.com",
+                subject: "	Brief confirmation code",
+                wait_time_sec: 30, // Poll interval (in seconds).
+                max_wait_time_sec: 40,
+                include_body: true,
+            },
+        }).then((emails) => {
+            var pincode = emails[0].subject.match(/\d/g);
+            pincode = pincode.join("");
+
+            cy.get(":nth-child(6) > .text-input").type(pincode);
+        });
+
+        // Dashboard should be visible along with the header: 'Welcome to Brief'
+        cy.get(".empty-screen__text").contains(
+            "Please select a chat to start messaging"
+        );
     });
 });
